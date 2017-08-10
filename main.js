@@ -32,19 +32,28 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
   response.json()
 
     .then(function(data){
-      let songAndArtists = data.results;
-      console.log(songAndArtists);
-      console.log(songAndArtists.length);
-    })
+      let songsAndArtists = data.results;
+      console.log(songsAndArtists);
+      console.log(songsAndArtists.length);
+
+      for (i = 0; i < 24; i++){
+        let music = songsAndArtists[i];
+        function musicPage(music){
+
+          
+
+  }
+
+
+}
 
 
 // 4. Create a way to append the fetch results to your page
 
 // here is where i will have my for loop
 
-for (i = 0; i < 24; i++){
 
-}
+})
 
 
 })
