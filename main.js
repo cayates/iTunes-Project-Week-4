@@ -25,23 +25,35 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
 
 // 3. Create your `fetch` request that is called after a submission
 // use this link :
-// https://itunes.apple.com/search?term=
-// this should cut off here ^ but also have jack+johnson&limit=25 or whoever the artist is
 
-  fetch(baseUrl + textInput + "&limit=25")
+  fetch(baseUrl + textInput + "&limit=24")
   .then(function(response){
   console.log(response.status);
   response.json()
 
-
-
-})
-})
-
-
+    .then(function(data){
+      let songAndArtists = data.results;
+      console.log(songAndArtists);
+      console.log(songAndArtists.length);
+    })
 
 
 // 4. Create a way to append the fetch results to your page
+
+// here is where i will have my for loop
+
+for (i = 0; i < 24; i++){
+
+}
+
+
+})
+})
+
+
+
+
+
 
 
 
