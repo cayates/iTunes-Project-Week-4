@@ -40,7 +40,7 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
                 <div class = "boxContainer">
                   <img src = "${music.artworkUrl100}" alt = "Album Art">
                     <ul>
-                      <li>${music.trackCensoredName}</li>
+                      <li><span>${music.trackCensoredName}</span></li>
                       <li>${music.artistName}</li>
                     </ul>
                 </div>

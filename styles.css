@@ -1,8 +1,14 @@
 body {
   background-color: white;
+  background-image: url("http://static.allbackgrounds.com/bg/jazz-music.jpg");
+  margin: 0;
 }
 header {
   text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .player {
   text-align: center;
@@ -12,6 +18,17 @@ header {
 }
 ul {
   list-style: none;
+  padding: 0;
+}
+li {
+  text-align: center;
+  margin: 8px;
+  font-family: monospace;
+}
+span {
+    font-weight: 600;
+    color: black;
+    font-family: chalkduster;
 }
 .results {
   display: flex;
@@ -19,13 +36,15 @@ ul {
   justify-content: center;
   margin-top: 40px;
 }
-div {
-
-}
 .boxContainer {
-  border-style: solid;
+  border-style: ridge;
   width: 20%;
+  margin: 20px;
+  background-color: azure;
 }
 img {
+  width: 70%;
+  padding-left: 45.73px;
+  padding-top: 20px;
   
 }
