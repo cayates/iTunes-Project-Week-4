@@ -38,7 +38,7 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
       function musicPage(music){
             let html =`
                 <div class = "boxContainer">
-                  <div class = "image" style = "background-image: url(${music.artworkUrl100})"></div>
+                  <img src = "${music.artworkUrl100}" alt = "Album Art">
                     <ul>
                       <li>${music.trackCensoredName}</li>
                       <li>${music.artistName}</li>

@@ -1,4 +1,31 @@
 body {
-  background-color: grey;
+  background-color: white;
 }
+header {
+  text-align: center;
+}
+.player {
+  text-align: center;
+}
+.searchSection {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+div {
 
+}
+.boxContainer {
+  border-style: solid;
+  width: 20%;
+}
+img {
+  
+}
