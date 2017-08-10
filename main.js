@@ -35,17 +35,37 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
       let songsAndArtists = data.results;
       console.log(songsAndArtists);
       console.log(songsAndArtists.length);
+      function musicPage(music){
+            let html =`
+                <div class = "boxContainer">
+                  <div class = "image" style = "background-image: url(${music.artworkUrl100})"></div>
+                    <ul>
+                      <li>${music.trackCensoredName}</li>
+                      <li>${music.artistName}</li>
+                    </ul>
+                </div>
+            `;
+          return html;
+  }
+
+    console.log(musicPage);
 
       for (i = 0; i < 24; i++){
         let music = songsAndArtists[i];
-        function musicPage(music){
+        
+       
 
-          
+// previewUrl -- preview audio
+// artworkUrl100 -- thumbnail
+// trackCensoredName -- song title
+// artistName -- artist name
 
-  }
-
+let addMusicToPage = musicPage(songsAndArtists[i]);
+resultsForm.innerHTML += addMusicToPage;
 
 }
+
+
 
 
 // 4. Create a way to append the fetch results to your page
