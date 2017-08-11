@@ -11,10 +11,13 @@ let searchBar = document.querySelector(".search-form");
 let resultsForm = document.querySelector(".results");
 let baseUrl = "https://itunes.apple.com/search?term=" // assigned to a variable so we can easily access it later
 
-let audioPlay = "";
-
 function playSong(url){
   realPlayer.setAttribute("src", url);
+}
+
+function clearResults(){
+  resultsForm.innerHTML = "";
+
 }
 
 let button = document.getElementById("searchButton");
@@ -30,6 +33,8 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
 
 // 3. Create your `fetch` request that is called after a submission
 // use this link :
+
+clearResults();
 
   fetch(baseUrl + textInput + "&limit=24")
   .then(function(response){
