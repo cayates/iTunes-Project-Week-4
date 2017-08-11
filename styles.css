@@ -41,6 +41,7 @@ span {
   width: 20%;
   margin: 20px;
   background-color: azure;
+  border-radius: 20px;
 }
 img {
   width: 70%;

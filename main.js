@@ -11,6 +11,11 @@ let searchBar = document.querySelector(".search-form");
 let resultsForm = document.querySelector(".results");
 let baseUrl = "https://itunes.apple.com/search?term=" // assigned to a variable so we can easily access it later
 
+let audioPlay = "";
+
+function playSong(url){
+  realPlayer.setAttribute("src", url);
+}
 
 let button = document.getElementById("searchButton");
 
@@ -38,11 +43,13 @@ searchBar.addEventListener("submit", function (makeSearchBarString){
       function musicPage(music){
             let html =`
                 <div class = "boxContainer">
+                <div class = "audio" onclick = "playSong('${music.previewUrl}')" >
                   <img src = "${music.artworkUrl100}" alt = "Album Art">
                     <ul>
                       <li><span>${music.trackCensoredName}</span></li>
                       <li>${music.artistName}</li>
                     </ul>
+                </div>
                 </div>
             `;
           return html;
