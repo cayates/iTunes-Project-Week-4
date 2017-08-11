@@ -1,9 +1,3 @@
-/*
-  Here is a rough idea for the steps you could take:
-*/
-
-// 1. First select and store the elements you'll be working with
-
 let musicPlayer = document.querySelector(".player");
 let realPlayer = document.querySelector(".music-player");
 let searchArea = document.querySelector(".search");
@@ -20,21 +14,20 @@ function clearResults(){
 
 }
 
+// resultsForm.innerHTML = <img src = "https://viralviralvideos.com/wp-content/uploads/GIF/2014/08/Dancing-GIF.gif">
+
 let button = document.getElementById("searchButton");
 
 let textInput = "";
 
-// 2. Create your `submit` event for getting the user's search term
 
 searchBar.addEventListener("submit", function (makeSearchBarString){ 
   makeSearchBarString.preventDefault()
   textInput = makeSearchBarString.target.querySelector('input[name = "search"]').value
   console.log(textInput);
 
-// 3. Create your `fetch` request that is called after a submission
-// use this link :
 
-clearResults();
+  clearResults();
 
   fetch(baseUrl + textInput + "&limit=24")
   .then(function(response){
@@ -79,38 +72,8 @@ resultsForm.innerHTML += addMusicToPage;
 
 
 
-
-// 4. Create a way to append the fetch results to your page
-
-// here is where i will have my for loop
-
-
 })
 
 
 })
 })
-
-
-
-
-
-
-
-
-// 5. Create a way to listen for a click that will play the song in the audio play
-
-/* Calvins code
-
-const form = document.querySelectorAll('form')[0]
-const baseUrl = 'http://www.recipepuppy.com/api/'
-let results
-form.addEventListener('submit', function (event) {
-  event.preventDefault()
-  console.log(this)
-  const nameInputValue = event.target.querySelector('input[name="name"]').value
-  const emailInputValue = event.target.querySelector(
-    'input[name="email"]'
-  ).value
-
-*/

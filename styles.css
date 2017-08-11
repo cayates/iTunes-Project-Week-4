@@ -3,13 +3,21 @@ body {
   background-image: url("http://static.allbackgrounds.com/bg/jazz-music.jpg");
   margin: 0;
 }
+#dancingGuy {
+    width: 40%;
+    padding-left: 0;
+}
 header {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: rgba(10, 10, 10, .75);
   padding-top: 20px;
   padding-bottom: 20px;
 }
+p {
+  font-family: chalkduster;
+  font-size: 25px;
+  color: white;
+} 
 .player {
   text-align: center;
 }
@@ -34,7 +42,6 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px;
 }
 .boxContainer {
   border-style: ridge;
@@ -47,5 +54,4 @@ img {
   width: 70%;
   padding-left: 45.73px;
   padding-top: 20px;
-  
 }
